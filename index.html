@@ -124,7 +124,7 @@ canvas{
 <!-- Login -->
 <div id="loginBox">
 <h2>Enter Password 💜</h2>
-<input type="text" id="password" placeholder="GHEEFTED">
+<input type="text" id="password" placeholder="Her Name">
 <br>
 <button onclick="startCountdown()">Unlock</button>
 <p id="error" class="hidden">Wrong password 💔</p>
@@ -150,10 +150,10 @@ canvas{
 
 <script>
 // PASSWORD
-var correctPassword = "GHEEFTED"; // highercase
+var correctPassword = "hername"; // lowercase
 
 function startCountdown(){
-  var input=document.getElementById("password").value.toHigherCase();
+  var input=document.getElementById("password").value.toLowerCase();
   if(input!==correctPassword){
     document.getElementById("error").classList.remove("hidden");
     return;
@@ -180,7 +180,7 @@ function unlock(){
 }
 
 // TYPEWRITER
-var message="Hey baby my GIFT Out of everyone in this world, I would still choose you. You are my peace, my forever, my everything. Happy Valentine's Day 💜";
+var message="Out of everyone in this world, I would still choose you. You are my peace, my forever, my everything. Happy Valentine's Day 💜";
 function typeWriter(){
   let i=0;
   function typing(){
